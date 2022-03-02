@@ -1,0 +1,18 @@
+# ##################################################################
+Design_folder_name = 's38417'		# folder name of the design
+Design_tag_name = 'T1p3'			# tag name of the design
+period_of_design = '1.3e-9'			# period of design
+# ##################################################################
+# this script submits jobs in parallel to a cluster server. each of parallel jobs runs SPICE simulation for
+# a number of timing paths. num_spice_each_run specifies the number of timing paths that each job contains.
+# note: we only have 50 licenses for Synopsys, to select this value in a way that generates less than 50 jobs
+num_spice_each_run = 2800
+# ##################################################################
+# in case of MONTE CARLO simulation, first revise the spice library to contain gaussian distribution of threshold voltage, length, oxide, etc...
+# then uncomment the block at line 41 in "10_run_SPICE.py"
+then specify a integer number here, otherwise keep it as is:
+monte_carlo_number = 'nothing'
+# ##################################################################
+# library directory for SPICE:
+spf_lib_ = '"/home/kgubbi/HSPICE_lib/saed32nm_rvt_revised_for_STA_machine_1.spf"'
+spice_lib_ = '"/home/kgubbi/HSPICE_lib/saed32nm.lib"'

@@ -1,0 +1,3 @@
+# our Physical Design uses a make file which generates a folder and a tag name per design:
+design_name = 'AES128'				# name of the design
+Design_tag_name = 'b1'				# tag name of the design

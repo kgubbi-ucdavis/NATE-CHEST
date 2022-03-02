@@ -1,0 +1,2 @@
+to reduce time, these samples are generated based on simpler models: Ridge and Lasso
+run the train_NN script with the "final_dataset_before_detection.txt" as input to generate the mlp and Stacking model's results

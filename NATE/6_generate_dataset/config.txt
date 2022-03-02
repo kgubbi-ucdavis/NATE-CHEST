@@ -1,0 +1,4 @@
+design = 's38417'
+tag = 'T1p3_tvlsi'
+
+number_path_included_in_training = 100

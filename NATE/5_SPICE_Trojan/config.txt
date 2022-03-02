@@ -1,0 +1,40 @@
+period_of_designn_1 = 1.3						# period of the design
+clock_ports_name = 'clk'			# name or list of the clock
+# ########################################################################################
+# our Physical Design uses a make file which generates a folder and a tag name per design:
+Design_name = 's38417'			# name of the design
+Design_tag_name = 'T1p3'		# tag name of the design
+top_name_ = 's38417'			# name of the top module in the gated netlist
+# ########################################################################################
+# directory of the constraint file:
+constraint_dir = '/scratch/kgubbi/Golden_Folder/Designs/s38417/T1p3/2_Synthesis/results/s38417.mapped.sdc'
+# ###########################
+# Routed design is saved in milkyway format. the directory of the milkyway directory of the design:
+milkyway_lib_dir = '/scratch/kgubbi/Golden_Folder/Designs/s38417/T1p3/7_Route/s38417_LIB_Route/'
+# ##################################################################
+# in case of MONTE CARLO simulation, first revise the spice library to contain gaussian distribution of threshold voltage, length, oxide, etc...
+# then uncomment the block at line 41 in "10_run_SPICE.py"
+then specify a integer number here, otherwise keep it as is:
+monte_carlo_number = 'nothing'
+# ###########################
+# IR-ATA voltages:
+# note V_max refers to the voltage with maximum drop. so the value of V_max should be smaller than V_min
+v_min = '0.95'
+v_max = '0.93'
+# ##################################################################
+# library directory for SPICE:
+spf_lib_ = '"/home/kgubbi/HSPICE_lib/saed32nm_rvt_revised_for_STA_machine_1.spf"'
+spice_lib_ = '"/home/kgubbi/HSPICE_lib/saed32nm.lib"'
+
+# ########################################################################################
+# library information:
+# target library:
+target_lib_ = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt1p05v125c.db'
+# ###########################
+# scaling library groups for different voltage corners:
+scaling_lib_1 = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt0p78v125c.db'
+scaling_lib_2 = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt0p85v125c.db'
+scaling_lib_3 = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt1p05v125c.db'
+# ###########################
+# search path for Synopsys tool:
+search_path_ = "/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_lvt/db_ccs /cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs /cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_hvt/db_ccs"

@@ -1,0 +1,9 @@
+###############################################
+# root path is where the dataset is located
+root_path = '/home/kgubbi/NATE/7_train_NN/samples/'
+###############################################
+# in_file is the nam eof the dataset file
+in_file = 'final_dataset_before_detection.txt'
+###############################################
+out_file = 'output.csv'
+res_file = 'results.csv'

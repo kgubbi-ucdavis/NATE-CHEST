@@ -1,0 +1,37 @@
+## Change config file as per local directory structure
+period = 1.3						# period of the design
+clock_ports_name = 'clk'			# name or list of the clock
+# ########################################################################################
+# our Physical Design uses a make file which generates a folder and a tag name per design:
+Design_name = 'AES128'				# name of the design
+Design_tag_name = 'b4'				# tag name of the design
+top_name_ = 'Top_PipelinedCipher'	# name of the top module in the gated netlist
+# ########################################################################################
+# directory of the constraint file:
+constraint_dir = '/scratch/kgubbi/Golden_Folder/Designs/AES128/b4/2_Synthesis/results/Top_PipelinedCipher.mapped.sdc'
+# ###########################
+# Routed design is saved in milkyway format. the directory of the milkyway directory of the design:
+milkyway_lib_dir = '/scratch/kgubbi/Golden_Folder/Designs/AES128/b4/7_Route/Top_PipelinedCipher_LIB_Route/'
+# ###########################
+# IR-ATA voltages:
+# note V_max refers to the voltage with maximum drop. so the value of V_max should be smaller than V_min
+v_min = '0.95'
+v_max = '0.93'
+# ###########################
+# directory of parasitics file:
+para_dir_ = '/scratch/kgubbi/Golden_Folder/Designs/AES128/b4/7_Route/results/parasitics.max'
+# ########################################################################################
+num_of_paths_= '50000'					# maximum number of timing paths needed for IR-ATA simulations.
+num_of_nworst_ = '10'					# number of worst timing paths per endpoints
+# ########################################################################################
+# library information:
+# target library:
+target_lib_ = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt1p05v125c.db'
+# ###########################
+# scaling library groups for different voltage corners:
+scaling_lib_1 = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt0p78v125c.db'
+scaling_lib_2 = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt0p85v125c.db'
+scaling_lib_3 = '/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs/saed32rvt_tt1p05v125c.db'
+# ###########################
+# search path for Synopsys tool:
+search_path_ = "/cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_lvt/db_ccs /cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_rvt/db_ccs /cm/shared/apps/synopsys/saed/SAED_EDK_32/lib/stdcell_hvt/db_ccs"

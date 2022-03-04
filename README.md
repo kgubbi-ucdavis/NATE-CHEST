@@ -3,6 +3,8 @@ UC Davis NATE - A Neural Network Assisted Timing Profiler for Hardware Trojan De
 
 > UC Davis NATE is a methodology for Hardware Trojan detection. UC Davis NATE does not require a Golden IC. Instead, it trains a Neural Network to act as a process tracking watchdog for correlating the static timing data (produced at design time) to the delay information obtained from clock frequency sweeping (at test time) for the purpose of Trojan detection. Using the UC Davis NATE flow, close to 90% of Hardware Trojans in the simulated scenarios are detected.
 
+Short Video Demo: https://youtu.be/twKXFVFdROE
+
 Dependancies:
 ```
 Synopsys IC Compiler 2

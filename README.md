@@ -1,7 +1,7 @@
-# CHEST-NATE
-NATE - A Neural Network Assisted Timing Profiler for Hardware Trojan Detection
+# UC Davis NATE (CHEST)
+UC Davis NATE - A Neural Network Assisted Timing Profiler for Hardware Trojan Detection
 
-> NATE is a methodology for Hardware Trojan detection. NATE does not require a Golden IC. Instead, it trains a Neural Network to act as a process tracking watchdog for correlating the static timing data (produced at design time) to the delay information obtained from clock frequency sweeping (at test time) for the purpose of Trojan detection. Using the NATE flow, close to 90% of Hardware Trojans in the simulated scenarios are detected.
+> UC Davis NATE is a methodology for Hardware Trojan detection. UC Davis NATE does not require a Golden IC. Instead, it trains a Neural Network to act as a process tracking watchdog for correlating the static timing data (produced at design time) to the delay information obtained from clock frequency sweeping (at test time) for the purpose of Trojan detection. Using the UC Davis NATE flow, close to 90% of Hardware Trojans in the simulated scenarios are detected.
 
 Dependancies:
 ```
@@ -33,7 +33,7 @@ tk                      0.1.0
 - [Support](#support)
  -->
 
-## NATE
+## UC Davis NATE
 
 The concept is to build the dataset, train the model, and run detection.
 The assumption is that we already have a trusted GDSII, and the Clock Frequency Sweeping test results of a suspicious fabrticated chip.
@@ -46,7 +46,7 @@ Pre-NATE:
 	you should have followings before running NATE:
 	1- PnR a benchmark > GDSII
 
-For NATE:
+For UC Davis NATE:
 * Note for each step there are readme file and config file (which needs to be edited) in each directory *
 	1- Generate a list of timing paths with "1_path_generation"
 	2- Extract features with "2_feature_extraction"
@@ -73,7 +73,7 @@ For NATE:
 git clone <use repo link from github>
 ```
 
-### Running NATE
+### Running UC Davis NATE
 
 Make sure to edit the config files before running these scripts.
 
